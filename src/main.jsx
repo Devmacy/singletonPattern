@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css'
+import BlueButton from "./components/blueButton.jsx";
+import RedButton from "./components/redButton";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    {/*<App />*/}
+      <RedButton></RedButton>
+      <BlueButton></BlueButton>
   </React.StrictMode>,
 )
