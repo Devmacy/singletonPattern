@@ -1,4 +1,5 @@
 import singleCounter from "../counter.js";
+import counterLog from "../counterLog.js";
 
 export default function RedButton() {
     const divStyle = {
@@ -13,6 +14,8 @@ export default function RedButton() {
                 onClick={() => {
                     singleCounter.increment();
                     alert(singleCounter.getCount())
+                    counterLog.log(`red button click, current total:${singleCounter.getCount()}`)
+                    console.info(counterLog.getLogList())
                 }}
         >
             ++count
